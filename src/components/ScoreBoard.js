@@ -61,7 +61,7 @@ function ScoreBoard({historyList, handleResetButton}) {
 }
 
 ScoreBoard.propTypes = {
-  historyList: PropTypes.shapeOf({}).isRequired, 
+  historyList: PropTypes.arrayOf(PropTypes.shape({}).isRequired).isRequired, 
   handleResetButton: PropTypes.func.isRequired
 }
 
